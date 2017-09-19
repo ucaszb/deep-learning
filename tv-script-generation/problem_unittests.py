@@ -238,9 +238,7 @@ def test_build_rnn(build_rnn):
             'Outputs has wrong shape.  Found shape {}'.format(outputs.get_shape())
         assert final_state.get_shape().as_list() == [test_rnn_layer_size, 2, None, test_rnn_size],\
             'Final state wrong shape.  Found shape {}'.format(final_state.get_shape())
-
     _print_success_message()
-
 
 def test_build_nn(build_nn):
     with tf.Graph().as_default():
